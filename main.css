@@ -3,17 +3,17 @@ body {
     margin: 60px 0 0;
     font-family: 'Aldrich', sans-serif;
     background-color: #1C1C1C; /* Matte grey color for the Main Page */
-    color: #fbf7f5; /* Off-white color for text on the Main Page */
+    color: #F8F8FF; /* Off-white color for text on the Main Page */
 }
 
 .top-panel {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fbf7f5;
+    background-color: #F8F8FF;
     padding: 15px 30px 15px 30px;
     border-top: 4px solid #1C1C1C;
-    border-bottom: 3px solid #00FFFF;
+    border-bottom: 3px solid #474B4F;
     position: fixed;
     width: 100%;
     top: 0;
@@ -49,7 +49,7 @@ body {
 }
 
 .right-section a:hover {
-    text-shadow: 5px 5px 12px #7ceaa4;
+    text-shadow: 5px 5px 12px #86C232;
     color: #000;
     font-weight: bold;
     background: transparent;
@@ -79,6 +79,6 @@ body {
 
 .about-content div {
     padding: 10px;
-    background-color: #f9f9f9; /* Same color as text on the Main Page */
+    background-color: #F8F8FF; /* Same color as text on the Main Page */
     border-radius: 5px;
 }

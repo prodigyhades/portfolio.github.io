@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight - 1300)) * 100;
     
         // Calculate the transitioned color based on the percentage
-        const initialColor = [251, 247, 245]; // RGB values for the initial bright color (white)
+        const initialColor = [248,248,255]; // RGB values for the initial bright color (white)
         const targetColor = [28, 28, 28]; // RGB values for the target color (#1C1C1C)
     
         const currentColor = initialColor.map((value, index) => {
@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
             logo.src = 'logo_inv.jpg';
             topPanel.style.background = 'rgba(28, 28, 28, 0.8)';
             // Apply the text color to the left section
-            leftSection.style.color = `rgb(251, 247, 245)`; // Set the desired text color
+            leftSection.style.color = `rgb(248,248,255)`; // Set the desired text color
     
             // Apply the text color to each link in the right section
             rightSectionLinks.forEach(link => {
-                link.style.color = `rgb(251, 247, 245)`;
+                link.style.color = `rgb(248,248,255)`;
             });
         } else {
             logo.src = 'logo.jpg';
