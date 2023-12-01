@@ -61,10 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const backgroundContainer = document.createElement('div');
     backgroundContainer.classList.add('background-container');
 
-    // Append the animated background HTML to the container
-
-    backgroundContainer.innerHTML = animatedBackgroundHTML;
-
     // Append the background container to the body
     document.body.appendChild(backgroundContainer);
 

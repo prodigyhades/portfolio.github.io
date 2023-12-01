@@ -61,9 +61,8 @@ body {
 .main-page {
     padding: 30px;
     display: none;
-    transition: opacity 0.5s ease-in-out;
-    background : transparent;
-
+    transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    background: transparent;
 }
 
 .main-page.active {
@@ -72,6 +71,7 @@ body {
 }
 
 .about-content {
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -79,6 +79,34 @@ body {
 
 .about-content div {
     padding: 10px;
-    background-color: #f9f9f9; /* Same color as text on the Main Page */
+    background-color: #f9f9f9;
     border-radius: 5px;
+}
+
+.test {
+    position: relative;
+    margin-right: 30px; /* Adjust the margin to create space between Test and Blogs */
+}
+
+.test .slide {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+.test:hover .slide {
+    display: block;
+}
+
+.test a {
+    text-decoration: none;
+    color: #1C1C1C;
+    font-size: 18px;
+}
+
+.test a:hover {
+    text-decoration: underline;
 }
