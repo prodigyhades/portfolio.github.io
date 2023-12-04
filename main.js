@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.main-page');
     const topPanel = document.getElementById('topPanel');
     const leftSection = document.getElementById('leftSection');
-    const rightSectionLinks = document.querySelectorAll('.right-section a');
+    const rightSectionLinks = document.querySelectorAll('.right-section > ul > li > a');
     const logo = document.getElementById('logo');
 
     function handleScroll() {
         // Calculate the percentage of scroll position
-        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight - 1300)) * 100;
+        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight - 1000)) * 100;
     
         // Calculate the transitioned color based on the percentage
         const initialColor = [251, 247, 245]; // RGB values for the initial bright color (white)
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Apply the text color to each link in the right section
             rightSectionLinks.forEach(link => {
                 link.style.color = `rgb(251, 247, 245)`;
+                //link.background.color = `rgb(28, 28, 28)`;
             });
         } else {
             logo.src = 'logo.jpg';
