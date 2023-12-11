@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const logo = document.getElementById('logo');
 
     function handleScroll() {
+        console.log('handleScroll function called.');
         // Calculate the percentage of scroll position
         const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight - 1000)) * 100;
     
