@@ -25,12 +25,10 @@ body {
     color: #1C1C1C;
     display: flex; /* Add this line to make the logo and text appear in a row */
     align-items: center; /* Add this line to vertically center the logo and text */
+    cursor: pointer;
 }
 
-.left-section img {
-    border-radius: 50%;
-    max-width: 50px;
-}
+
 
 .left-section h1 {
     font-size: 36px;
@@ -70,6 +68,37 @@ body {
     opacity: 1;
 }
 
+#myPicture {
+    --color:  #A4444B; /* the border color #76393E*/
+    --border: 8px;   /* the border thickness*/
+    --offset: 15px;   /* control the offset*/
+    --gap: 5px;       /* the gap on hover */
+    
+    --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+    --_o: calc(3*var(--offset));
+    padding: 
+      calc(var(--gap) + var(--border))
+      calc(var(--gap) + var(--border) + var(--offset))
+      calc(var(--gap) + var(--border) + var(--offset))
+      calc(var(--gap) + var(--border));
+    background: 
+      linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+      linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+    background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+    background-repeat: no-repeat;
+    filter: drop-shadow(4px 4px 10px rgb(151, 80, 80, 0.6));
+    /*filter: grayscale(.4);*/
+    transition: .4s;
+    cursor: pointer;
+  }
+  #myPicture:hover {
+    background-position: 0px 0px;
+    background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+    filter: drop-shadow();
+    /*filter: grayscale(0);*/
+}
+
+
 .about-content {
     padding: 30px;
     display: grid;
@@ -85,7 +114,7 @@ body {
 
 .right-section li:hover ul { 
 	opacity: 1;
-	top: 55px; /*y-axis for dropdown*/
+	top: 100%; /*y-axis for dropdown*/
 	visibility: visible;
 }
 
@@ -98,8 +127,8 @@ body {
 
 .right-section li ul{
     float: left;
-	left: 0;
-	width:170%;
+	left: auto;
+	width:100px;
 	opacity: 0;
 	position: absolute;
 	top: 100%;
@@ -109,7 +138,7 @@ body {
 	-moz-transition: all .25s ease;
 	-ms-transition: all .25s ease;
 	-o-transition: all .25s ease;
-	transition: all .25s ease;
+	transition: all .75s ease;
 }
 
 .right-section ul li{  /*TEST BLOG ABOUT....*/

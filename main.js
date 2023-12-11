@@ -75,4 +75,10 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById(targetSectionId).classList.add('active');
         }
     });
+    leftSection.addEventListener('click', function () {
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById('homepage').classList.add('active');
+    });
 });
