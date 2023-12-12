@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <!--BLOG 1-->
+  <!--=========================================================================BLOG 1=========================================================================-->
     <div id="blog1" class="main-page">
         <style>
         #blog1 * {
@@ -53,18 +53,27 @@
             /* Add some bottom margin for spacing between paragraphs */
         }
 
-        body {
+        #blog1 {
             margin: 100px 0 0;
             /* Adjust the top margin to give space for the topPanel */
-            color: #1C1C1C;
+            color: #222222;
+        }
+
+        .header-container {
+            background-color: #ffffffe3; /* Set the background color of the container to white */
         }
 
         .header {
-            text-decoration:solid;
+          text-rendering: optimizeLegibility;
+            text-decoration: solid;
             padding: 1px;
             font-size: 50px;
             text-align: center;
-            background: #fbf7f5fc;
+            text-shadow: 5px 5px 20px #fffefe01;
+            background: linear-gradient(90deg, #4285f4, #34a853, #fbbc05, #ea4335);
+            background-clip: text;
+            -webkit-background-clip: text; /* For older browsers that use the WebKit engine */
+            color: transparent; /* Set the text color to transparent */
         }
 
         .leftcolumn {
@@ -79,7 +88,7 @@
         }
 
         .card {
-            background-color: #fbf7f5ea;
+            background-color: #ffffffe3;
             padding: 20px;
             margin-top: 20px;
         }
@@ -106,9 +115,11 @@
             }
         }
         </style>
-        <div class="header">
-        <h5>Google Gemini: Unveiling the Future of AI</h5>
-        </div>
+
+        <div class="header-container">
+          <div class="header"><h5>Google Gemini: Unveiling the Future of AI</h5></div>
+        </div>       
+
 
         <div class="row">
             <div class="leftcolumn">
@@ -253,15 +264,14 @@
         </div>
     </div>
 
-    <!--BLOG 1 END-->
-
+  <!--=========================================================================BLOG 1 END=========================================================================-->
     <div id="homepage" class="main-page active">
       <div class="container">
-        <div style="position: absolute; left: 380px; top: 320px; color: #F9F9F9; font-size: 80px">
+        <div style="position: absolute; left: 380px; top: 320px; color: #FAED26; font-size: 80px">
           <div><b><i>Venkatesh</i></b></div>
           <div><b><i>Patnaik</i></b></div>
         </div>
-        <div style="position: absolute; left: 385px; top: 510px; color: #f9f9f9d3; font-size: 28px">
+        <div style="position: absolute; left: 385px; top: 510px; color: #f9f9f9e2; font-size: 28px">
           <hr>
           <p>3rd Year BTech. CSE Student</p>
         </div>
