@@ -51,7 +51,7 @@ body {
 }
 
 .right-section a:hover {
-    text-shadow: 5px 5px 12px #7ceaa4;
+    text-shadow: 5px 5px 12px #FAED26;
     color: #000;
     font-weight: bold;
     background: transparent;
@@ -70,7 +70,7 @@ body {
 }
 
 #myPicture {
-    --color:  #A4444B; /* the border color #76393E*/
+    --color:  #FAED26; /* the border color #76393E*/
     --border: 8px;   /* the border thickness*/
     --offset: 15px;   /* control the offset*/
     --gap: 5px;       /* the gap on hover */
@@ -87,7 +87,7 @@ body {
       linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
     background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
     background-repeat: no-repeat;
-    filter: drop-shadow(4px 4px 10px rgb(151, 80, 80, 0.6));
+    filter: drop-shadow(4px 4px 10px rgba(250, 235, 28, 0.9));
     /*filter: grayscale(.4);*/
     transition: .4s;
     cursor: pointer;
