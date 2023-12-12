@@ -84,7 +84,7 @@ body {
     linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
   background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
   background-repeat: no-repeat;
-  filter: drop-shadow(4px 4px 10px rgba(250, 235, 28, 0.9));
+  filter: drop-shadow(4px 4px 10px rgba(250, 235, 28, 0.6));
   /*filter: grayscale(.4);*/
   transition: 0.4s;
   cursor: pointer;
@@ -182,8 +182,8 @@ body {
   padding: 8px;
   color: #1a1a1a;
   background: #d9d5d4;
-  border-bottom: 1px solid #ddd; /* Subtle border between items */
-  width: 200%; /* Adjust the width as needed */
+  border-bottom: 1px solid #a7a6a6; /* Subtle border between items */
+  width: 400%; /* Adjust the width as needed */
   text-align: left; /* Center text within each dropdown item */
   transition: background 0.2s ease; /* Smooth transition for hover effect */
 }
